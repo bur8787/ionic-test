@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { NavController, NavParams } from 'ionic-angular';
-
+import {NavController, NavParams} from 'ionic-angular';
+//import {Camera, CameraOptions} from '@ionic-native/camera';
 
 @Component({
   selector: 'page-item-details',
@@ -10,8 +10,13 @@ import { NavController, NavParams } from 'ionic-angular';
 export class ItemDetailsPage {
   selectedItem: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams
+              // private camera: Camera
+  ) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
   }
+
+
 }
