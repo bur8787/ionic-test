@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {CameraPage} from "../pages/camera/camera";
+import {GridPage} from "../pages/grid/grid";
 
 
 @Component({
@@ -32,6 +33,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HelloIonicPage },
       { title: 'Camera', component: CameraPage },
+      { title: 'Grid', component: GridPage },
       { title: 'My First List', component: ListPage }
     ];
   }
