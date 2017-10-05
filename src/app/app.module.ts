@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-import {IonicApp, IonicModule, IonicErrorHandler, Grid} from 'ionic-angular';
+import {IonicApp, IonicModule, IonicErrorHandler, Grid, FabButton} from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Camera } from '@ionic-native/camera';
 import {GridPage} from "../pages/grid/grid";
+import {FabsPage} from "../pages/fabs/fabs";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {GridPage} from "../pages/grid/grid";
     ItemDetailsPage,
     ListPage,
     CameraPage,
-    GridPage
+    GridPage,
+    FabsPage
   ],
   imports: [
     BrowserModule,
@@ -33,13 +35,15 @@ import {GridPage} from "../pages/grid/grid";
     ItemDetailsPage,
     ListPage,
     CameraPage,
-    GridPage
+    GridPage,
+    FabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
     Grid,
+    FabButton,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
